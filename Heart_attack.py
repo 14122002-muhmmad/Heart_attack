@@ -4,7 +4,7 @@ import numpy as np
 
 
 
-df = pd.read_csv(r"H:\mid_year_project\df_cleaned.csv")
+df = pd.read_csv("df_cleaned.csv")
 st.markdown("<h1 style='text-align: center; color: black;'>Heart Attack Prediction</h1>",unsafe_allow_html=True)
 st.image(r'https://www.nhlbi.nih.gov/sites/default/files/styles/meta_image/public/2022-09/Heart.jpg?itok=Mfe23Jii')
 st.write('''Patient Information:

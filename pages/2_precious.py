@@ -5,7 +5,7 @@ import plotly.express as px
 st. set_page_config(layout="wide")
 
 
-df = pd.read_csv(r"H:\mid_year_project\df_cleaned.csv")
+df = pd.read_csv("df_cleaned.csv")
 col1, col2, col3,  = st.columns(3)
 with col1:
     fig = px.funnel(df,x='Continent',y='Heart Attack Risk',color='Country',title='Continent vs. Heart Attack Risk',hover_name='Country',width=800,height=600,color_discrete_sequence=px.colors.qualitative.Set3_r,template='plotly_dark')

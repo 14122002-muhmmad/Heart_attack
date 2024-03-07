@@ -5,7 +5,7 @@ import plotly.express as px
 
 
 
-df = pd.read_csv(r"H:\mid_year_project\df_cleaned.csv")
+df = pd.read_csv("df_cleaned.csv")
 numeric_columns = df.select_dtypes(include='number').columns
 Categorical_columns = df.select_dtypes(include='O').columns
 
